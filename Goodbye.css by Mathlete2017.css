@@ -1,0 +1,383 @@
+/* Goodbye.css by Mathlete2017
+
+Theme created by Mathlete2017. Please keep this header if you reuse this style. Goodbye AoPS!
+
+Licensed under the MIT License
+
+Permission granted to reuse and change this style */
+/* Modified by MysticBoba*/
+/* --> */
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/*editing colors, credits to theflamingohacker*/
+/*MysticBoba*/
+a[href="/community/user/705758"] { 
+  color: #d4d7ff !important; 
+  font-weight: bold !important;
+}
+/*Feed username color patch. Original code by AoPS.*/
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #b7ede3 !important;}
+.cmty-forum-mod a{color: #b7bfed !important;}
+#side{
+padding:0!important;
+}
+
+:root{
+--theme: #000000;
+}
+
+/* General and Wrapper */
+html{
+overflow-x:hidden!important;
+}
+#page-wrapper{
+width:100vw!important;
+margin:0!important;
+padding:0!important;
+background-color:white!important;
+}
+#wrapper{
+width:100vw;
+margin-left:0!important;
+margin-right:0!important;
+padding:0!important;
+border:none!important;
+background-color:white!important;
+}
+
+/* Navigation Bar and Header */
+#navigation_box{
+background-color:#fff;
+padding:10px!important;
+position:fixed;
+border-bottom:none;
+height:48px;
+z-index:9871293047102478910324708170283701987409132470918237490813240971209481098234098123401230987098423109!important;
+}
+#navigation_box a{
+padding:4px!important;
+font-family: 'Indie Flower', cursive;
+font-size:16px;
+color:#b7edce !important;
+border-bottom: solid 3px var(--theme);
+border-color:#b7e6ed;
+transition:.2s;
+}
+#navigation_box a:hover{
+padding-bottom:7px!important;
+}
+#left_navigation_box{
+color:#b7ede0;
+}
+#left_navigation_box a:nth-child(2){
+margin-left:-8px;
+}
+#left_navigation_box a:nth-child(3){
+margin-left:-9px;
+}
+#left_navigation_box a:nth-child(4){
+margin-left:-9px;
+}
+#right_navigation_box{
+color:#c6f7f0;
+}
+#right_navigation_box a:nth-child(1){
+margin-right:-5px;
+}
+#right_navigation_box a:nth-child(2){
+margin-right:-6px;
+}
+#header{
+height:103vh;
+background-color:rgb(0,0,0);
+background-image:url("https://tse3.mm.bing.net/th/id/OIP.dWPX5Jt3B0w418gUGSlw_QHaDs?pid=ImgDet&rs=1");
+background-position: 100% 50%;
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment:fixed;
+border-style:none;
+overflow-x:hidden!important;
+
+}
+#header h1{
+position: absolute;
+bottom: 0;
+width:100%;
+text-align:center;
+color:#a1e4ff;
+font-family: 'Indie Flower', cursive;
+font-size:90px;
+height:150px;
+overflow:hidden!important;
+transition:0.4s;
+}
+#header h1:hover{
+text-decoration:none;
+font-size:110px;
+bottom:10px;
+}
+
+
+
+/* Main and Content */
+#content{
+width:100vw!important;
+background-color:transparent;
+}
+#main{
+max-width: 50vw;
+padding:20px!important;
+width:100%!important;
+display:inline-block;
+position: absolute;
+left:50%;
+transform: translate(-50%, 0);
+height:100%!important;
+}
+
+
+/* Sidebar and Widgets */
+#side {
+color: #c6f7f0;
+background-color: #fff;
+padding: 10px;
+width: 20vw;
+max-width: 20vw;
+height: 100%;
+overflow-y: scroll;
+}
+
+.row1 {
+font-family: 'Indie Flower', cursive;
+background-color: #c6f7f0;
+color: #ffffff;
+corner-radius: 5px;
+}
+
+.row2 {
+font-family: 'Indie Flower', cursive;
+background-color:#c6e7f7;
+color: #ffffff;
+}
+li.row1, li.row2 {
+padding: 5px !important;
+border-top:2px solid burgundy;
+transition: all 1.5s;
+-webkit-transition: all 2s; /*time seconds*/
+-moz-transition: all 2s;
+-o-transition: all 2s;
+}
+#shouts-widget fieldset { border: none; }
+li.row1, .row1 { }
+li.row1:hover, li.row2:hover {
+transition-delay: 0.0 s;
+-webkit-transform: rotate(360deg); /*rotated degrees*/
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+li.row1:hover, li.row2:hover {
+background-color: #abcdef;/*This is the color the thing that's spinning turns so just change the hex code*/
+}
+.message > span > a.bbcode_url {
+color: inherit !important;
+}
+}
+
+
+/* widgets */
+#side > div {
+margin: 0 !important;
+padding: 2em 0 !important;
+border-bottom: 1px solid #fff;
+}
+
+#side > div:last-child {
+border-bottom: 0;
+}
+#side .block {
+clear: both;
+padding: 1em 0;
+}
+
+.widget-title {
+margin-bottom: 0.5em;
+}
+
+.widget-title, .archive-month, .archive-month strong {
+font: Comfortaa;
+}
+
+#message, .aops-scroll-inner, .aops-scroll-content {
+width: 100% !important;
+}
+
+#message {
+font: inherit;
+background: none;
+padding: 0.25em 0.5em;
+}
+
+fieldset {
+border: none;
+}
+
+#side .cmty-itembox {
+height:auto;
+}
+
+.blog-tags-wrapper, .blog-scroll-outer {
+padding: 0 !important;
+width: 100%;
+}
+.month-image {
+width: 0.5em;
+padding-bottom: 0.2em;
+}
+
+
+#blog_searchform fieldset input {
+font: inherit;
+background: none !important;
+padding: 0.25em 0.5em;
+border: 1px solid #fff;
+}
+
+#blog_searchform fieldset .button2 {
+margin-top: 0.5em;
+}
+
+.description {
+margin: 0 0 1em;
+}
+
+
+/* Entries and Comments*/
+#post-new-entry-p{
+text-align:center;
+padding-top:20px;
+padding:30px!important;
+margin-bottom:50px;
+margin-top:-11px!important;
+width:100%;
+top:48px;
+margin:auto;
+background-color:transparent!important;
+}
+#post-new-entry{
+color#c6f7f0;
+font-family: 'Indie Flower', cursive;
+font-size:17px;
+padding:3px;
+border-bottom:3px solid var(--theme);
+border-color:#c6eef7
+transition:0.15s;
+}
+#post-new-entry:hover{
+padding-bottom:6px;
+}
+#post-new-entry-p img{
+display:none;
+}
+.entry{
+border:none!important;
+margin-top:0!important;
+}
+.entry h1{
+text-align:center;
+}
+.entry h1 a{
+font-family: 'Indie Flower', cursive;
+font-size:40px;
+color: #c6eef7
+}
+.entry h2{
+text-align:center;
+font-family: 'Indie Flower', cursive;
+font-size:15px;
+color:#c6eef7;
+}
+.entry h2 strong a{
+color:#c6eef7!important;
+font-family: 'Indie Flower', cursive;
+}
+strong{
+font-family: 'Indie Flower', cursive;
+}
+.entry h2 img{
+display:none;
+}
+.entrywrap{
+border:none!important;
+background-color:transparent!important;
+margin-top:15px;
+}
+.message{
+font-family: 'Indie Flower', cursive;
+font-size:17px;
+color:black;
+}
+.cmty-post-edit-info{
+display:none!important;
+}
+.modactions li a, .actions li a{
+font-family: 'Indie Flower', cursive;
+color:#c6d9f7;
+text-decoration:none!important;
+font-size:17px;
+transition:.25s;
+padding:2px;
+border-bottom: solid 3px var(--theme);
+border-color:#c6eef7;
+}
+.modactions li a:hover, .actions li a:hover{
+padding-bottom:5px!important;
+}
+.actions{
+margin-left:-6px;
+margin-top:6px;
+}
+.modactions{
+margin-right:-6px;
+margin-top:6px;
+}
+.bbcode_quote{
+margin-left:0!important;
+margin-right:0!important;
+border-radius:0;
+border-top:none;
+border-bottom:none;
+border-right:none;
+border-left: solid 3px var(--theme);
+border-color:#c6eef7;
+margin-bottom:20px;
+}
+.bbcode_quote_head{
+font-size:14px;
+}
+.bbcode_quote_head::before{
+display:none;
+}
+a:link{
+font-family: 'Indie Flower', cursive;
+color: #c6c9f7;
+}
+a:visited {
+color: 
+#c6c9f7
+;
+}
+.cmty-item-tag {
+  /* Rule extends %transition03 */
+  background-color: #c6d9f7!important;
+  font-family: 'Indie Flower', cursive;
+  color: #fff !important;
+  font-size: 1em;
+}
+.cmty-item-tag:hover, #left_navigation_box a.cmty-item-tag:last-child, .cmty-item-tag#blog_keywords:focus {
+  background-color:#c6d9f7 !important;
+}
+@media (max-width: 600px) {
+  #navigation_box {
+    display: none; }
+}
