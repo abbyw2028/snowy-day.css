@@ -9,7 +9,6 @@ Permission granted to reuse and change this style */
 /* --> */
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-/*editing colors, credits to theflamingohacker*/
 /*MysticBoba*/
 a[href="/community/user/705758"] { 
   color: #d4d7ff !important; 
@@ -91,7 +90,8 @@ margin-right:-6px;
 #header{
 height:103vh;
 background-color:rgb(0,0,0);
-background-image:url("https://tse3.mm.bing.net/th/id/OIP.dWPX5Jt3B0w418gUGSlw_QHaDs?pid=ImgDet&rs=1");
+/* sets background image */
+background-image:url("https://i.pinimg.com/564x/d9/85/e4/d985e4bd5c6bddecf645cf3fb2dd7a8c.jpg");
 background-position: 100% 50%;
 background-repeat: no-repeat;
 background-size: 100%;
@@ -105,6 +105,7 @@ position: absolute;
 bottom: 0;
 width:100%;
 text-align:center;
+/* title color */
 color:#a1e4ff;
 font-family: 'Indie Flower', cursive;
 font-size:90px;
@@ -151,14 +152,14 @@ overflow-y: scroll;
 .row1 {
 font-family: 'Indie Flower', cursive;
 background-color: #c6f7f0;
-color: #ffffff;
+color: #45556e;
 corner-radius: 5px;
 }
 
 .row2 {
 font-family: 'Indie Flower', cursive;
 background-color:#c6e7f7;
-color: #ffffff;
+color: #c6f7f0;
 }
 li.row1, li.row2 {
 padding: 5px !important;
@@ -171,6 +172,7 @@ transition: all 1.5s;
 #shouts-widget fieldset { border: none; }
 li.row1, .row1 { }
 li.row1:hover, li.row2:hover {
+/*makes the comments rotate */
 transition-delay: 0.0 s;
 -webkit-transform: rotate(360deg); /*rotated degrees*/
 -moz-transform: rotate(360deg);
@@ -289,16 +291,16 @@ text-align:center;
 .entry h1 a{
 font-family: 'Indie Flower', cursive;
 font-size:40px;
-color: #c6eef7
+color: #a9d0d9
 }
 .entry h2{
 text-align:center;
 font-family: 'Indie Flower', cursive;
 font-size:15px;
-color:#c6eef7;
+color:#a9d0d9;
 }
 .entry h2 strong a{
-color:#c6eef7!important;
+color:#a9d0d9!important;
 font-family: 'Indie Flower', cursive;
 }
 strong{
@@ -328,7 +330,7 @@ font-size:17px;
 transition:.25s;
 padding:2px;
 border-bottom: solid 3px var(--theme);
-border-color:#c6eef7;
+border-color:#c6d9f7;
 }
 .modactions li a:hover, .actions li a:hover{
 padding-bottom:5px!important;
@@ -349,7 +351,7 @@ border-top:none;
 border-bottom:none;
 border-right:none;
 border-left: solid 3px var(--theme);
-border-color:#c6eef7;
+border-color:#c6d9f7;
 margin-bottom:20px;
 }
 .bbcode_quote_head{
