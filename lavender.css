@@ -1,0 +1,591 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+/*you can find the creators at dafont.com*/
+@font-face {
+font-family: mandala;
+src: url('https://cdn.statically.io/gh/chloe-tseng/chloe-fonts/main/mandala_in_autumn-webfont.woff2') format('woff2'),
+url('https://cdn.statically.io/gh/chloe-tseng/chloe-fonts/main/mandala_in_autumn-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+/* Loading GIF */ 
+@keyframes waiting{
+    0% {
+        background: url(https://th.bing.com/th/id/OIP.-D14WgYy-Bf_ciwTNfrEWwAAAA?rs=1&pid=ImgDetMain) no-repeat center center fixed; 
+        background-size: cover;
+        top:0;
+    }
+
+    100% { 
+        background: url(https://voonze.com/wp-content/uploads/2021/02/ia-never-gonna-give-you-up-rick-astley-trionfale-remaster-4k-v3-500421-1536x864.jpg) no-repeat center center fixed; 
+        background-size: cover;
+        height:105vw;
+    }
+}
+
+/* Apply loading GIF to body */ 
+body::before {
+    top:100vh;
+    content:" ";
+    animation: waiting 2s !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    position: fixed;
+    font-size: 200px;
+    background-color: var(--bg);
+    z-index:100000000000000000000;
+}
+#main::before {
+content: " lock in";
+position: relative;
+font-size: 17px;
+color: ;
+}
+#header{ /** Blog header box **/
+padding-top: 20px;
+border: none;
+box-shadow: 0px 0px 10px 0px #ffffff;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+background-color: #fff;
+}
+
+
+div#wrapper{
+width:1000px;
+border: none;
+padding: 0px;
+margin: none;
+opacity: 1;
+}
+#page-wrapper {
+background-image: url(https://i.pinimg.com/1200x/5e/ca/d5/5ecad55bdac3e81411d093fb8a4237a8.jpg); /*background */
+background-repeat: repeat;
+background-size:100%;
+font-family: Gaegu;
+background-color: #000;
+}
+#main{
+padding-left: 15px;
+width: 735px;
+}
+
+#main::after {
+content: "-lavender.css b-";
+font-size: 15px;
+}
+
+.row1{ /* shoutbox/comment coloring/rotation */
+background-color: #fff;
+border-radius: 10px;
+}
+.row2{ /* shoutbox/comment coloring/rotation */
+background-color: #F4EAD5;
+border-radius: 10px;
+}
+li.row1, li.row2 {
+padding: 5px !important;
+border-top:2px;
+transition: all 1s;
+-webkit-transition: all 1s; /
+-moz-transition: all 1s;
+-o-transition: all 1s;
+}
+#shouts-widget fieldset { border: none; }
+li.row1, .row1 { }
+li.row1:hover, li.row2:hover {
+transition-delay: 1 s;
+-webkit-transform: rotate(360deg); 
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+
+.aops-icon.blog-delete-shout{color: #FFFBE9;}
+
+
+
+div .entrywrap{
+background: #CCD6A6;
+border: 2px!important;
+transition: .2s ease;
+text-color: #006400;
+}
+
+div .entrywrap:hover{
+background: #CCD6A6;
+transition: .3s ease;
+}
+
+/*poll stuff from yash's blog*/
+
+.cmty-poll-display{
+background-color: #E9F0E5 !important;
+border: 3px solid #CCD6A6;
+border-radius: 0.8rem;
+
+}
+
+.cmty-poll-result-bar { 
+border-radius: 3px;
+background-color: #CCD6A6;
+}
+
+#navigation_box{
+position: fixed;
+background: #CCD6A6;
+border-bottom: none;
+}
+
+#navigation_box a{
+font-family: Comfortaa;
+font-size: 15px;
+}
+h1 {
+  color: #000000;
+  text-align: center;
+  font-family: Gaegu;
+  font-size: 25px;
+  border: 2px solid #006400;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+a:link {
+  color: #DAF7A6;
+}
+a:visited {
+  color: #90EE90;
+}
+a:hover {
+  color: #90EE90;
+}
+a:active {
+  color: #90EE90;
+} 
+@keyframes example {
+  0%   {background-color: #CCD6A6;}
+  25%  {background-color: #CCD6A6;}
+  50%  {background-color: #CCD6A6;}
+  75% {background-color: #CCD6A6;}
+  100%   {background-color: #CCD6A6;}
+}
+
+#header h1{
+font-family: mandala!important;
+color: #006400;
+}
+h1{
+font-family: Gaegu;
+font-size: 30px;
+padding-left: 18px;
+}
+
+a:link, a:visited, a:active{
+color: #90EE90;
+text-decoration: none!important;
+}
+
+.faux-link{
+color: #90EE90
+text-decoration: none!Important;
+}
+
+div.cmty-item-tag{
+background: #006400!important;
+}
+div.cmty-item-tag{ 
+font-family: Gaegu;
+color: #fff!Important;
+border-radius: 10px; 
+-webkit-transition: .4s!important;
+font-size: 13px;
+}
+div.cmty-item-tag:hover{
+border-radius: 4px;
+}
+/* Shout input box color and font*/
+.inputbox
+{
+width: 80%;
+background-color: #DAE2B6;
+color: #000000!important;
+border-radius: 15px;
+box-shadow: 0px 0px 7px #CCD6A6;
+transform: scale(0.95);
+border-color: #CCD6A6!important;
+}
+
+/*Archive CSS provided by epiccakeking/happycupcake:*/
+/*Creative Name by epiccakeking/happycupcake
+Licensed under the MIT License (see https://github.com/epiccakeking/aops-blog-css/blob/master/LICENSE)*/
+.month-image{
+  background: url(https://i.pinimg.com/1200x/5e/ca/d5/5ecad55bdac3e81411d093fb8a4237a8.jpg) !important;
+  background-size: contain !important;
+  padding-left: 16px;
+  width: 16px;
+  height: 16px;
+  transition: transform .5s;
+  transform: scaleY(-1) !important;
+}
+.month-image[alt='-']{
+  transform: scaleY(1) !important;
+}
+.archive-month-topics{
+font-size: 16px!important;
+  display: block;
+  overflow: hidden;
+}
+.archive-month-topics .archive-row{
+  display: block;
+  overflow: hidden;
+  transition: margin .25s, transform .25s .25s;
+  margin-top: 0px;
+  height: 20px;
+}
+.archive-month-topics.archive-month-collapsed .archive-row{
+  margin-top: -20px;
+  transform: scaleY(0);
+  transition: margin .25s .25s, transform .25s;
+}
+
+.archive-month{
+font-size: 18px!important;
+}
+
+img:not(.latex) {/*rounds the edges of images*/
+  border-radius: 10px;
+}
+img.bbcode_smiley {
+  border-radius: 0px!important;
+}
+/* Body Font and Color */
+body{
+background-color: #fff!important;
+color: #006400;
+font-family: Gaegu;
+}
+
+/*hide thingy stuff*/
+a.cmty-hide-heading, span.cmty-hide-heading:hover {
+color: #6c7d59;
+}
+a.cmty-hide-heading, span.cmty-hide-heading{
+background: #E9F0E5 !important;
+color: #93a87d;
+font-size: 15px;
+border-radius: 0.3rem;
+}
+.bbcode_quote:before, .bbcode_quote, .bbcode_quote_head, .bbcode_quote:after, .cmty-hide-content:before, .cmty-hide-content, .cmty-hide-content:after{
+background-color: #F4EAD5!important;
+border-color: #006400;
+}
+
+side{
+background-color: #fff!important;
+}
+
+.cmty-post-edit-info{
+display: none!important;
+}
+a:link, a:visited, a:active{
+color: #362419;
+text-decoration: none!important;
+}
+
+.faux-link{
+color:#362419;
+text-decoration: none!Important;
+}
+
+a.username-coloured:after, #contrib-widget a:after, #shouts-widget a:after, p.author a:after{
+content: " ☘︎ "
+}
+}
+
+a[href="/community/user/970840"]{font-size: 0px} 
+a[href="/community/user/970840"]::after {
+ font-size:10px!important; 
+  font-weight: bold !important;
+content: "";
+color: 
+
+}
+
+a[href="/community/user/1017836"]{font-size: 0px} 
+a[href="/community/user/1017836"]::before {
+ font-size:16px!important; 
+  font-weight: normal !important;
+content: "pregnant man";
+color: #6FA8DC
+
+}
+
+a[href="/community/user/476425"]{font-size: 0px} 
+a[href="/community/user/476425"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "sapphire is not a dolphin nine";
+color:  #A2C4C9;
+
+}
+
+#wrapper{
+font-size:15px !important;
+}
+h1{
+font-size:20px!important;
+}
+#navigation_box a{
+font-size:15px!important;
+}
+
+a[href="/community/user/1030160"]{font-size: 0px} 
+a[href="/community/user/1030160"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "tea";
+color: 
+
+}
+
+
+a[href="/community/user/1030160"]{font-size: 0px} 
+a[href="/community/user/1030160"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "tea";
+color: 
+
+}
+
+a[href="/community/user/454759"]{font-size: 0px} 
+a[href="/community/user/454759"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "anonymous";
+color: 
+
+}
+}
+
+a[href="/community/user/1008690"]{font-size: 0px} 
+a[href="/community/user/1008690"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "ishi";
+color: 
+
+}
+
+a[href="/community/user/1027715"]{font-size: 0px} 
+a[href="/community/user/1027715"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "ishi";
+color: 
+
+}
+/*neha*/
+
+a[href="/community/user/1036864"]{font-size: 0px} 
+a[href="/community/user/1036864"]::before {
+ font-size:15px!important; 
+  font-weight: normal !important;
+content: "neha";
+color: 
+
+}
+/*duck*/
+
+a[href="/community/user/482399"]{font-size: 0px} 
+a[href="/community/user/482399"]::before {
+ font-size:16px!important; 
+  font-weight: bold !important;
+content: "BIG DUCK";
+color: #b784a7
+
+}
+a[href="/community/user/588325"]{font-size: 0px} 
+a[href="/community/user/588325"]::before {
+ font-size:15px!important; 
+  font-weight: normal;
+content: "lily ";
+color: 
+
+}
+a[href="/community/user/991176"]{font-size: 0px} 
+a[href="/community/user/991176"]::before {
+ font-size: 16px!important; 
+ font-weight: bold !important;
+  font-weight: normal;
+content: "food ";
+color: #f00
+
+}
+/*linny.t*/
+a[href="/community/user/1044641"]{font-size:0px}
+a[href="/community/user/1044641"]::before {
+ font-size:15px!important;
+  font-weight: bold!important;
+content: "linny"!important;
+color:;
+}
+
+a[href="/community/user/580670"]{font-size: 0px} 
+a[href="/community/user/580670"]::before {
+  font-weight: bold;
+  font-size:15px;
+  font-weight: bold!important;
+  color: #d5a6bd;
+  content: "yashy! ";
+}
+
+}
+/*title*/
+@font-face {
+font-family: muthiara_demo_version;
+src: url('https://cdn.statically.io/gh/Calculating0/muthiara/main/muthiara_demo_version-webfont%5B1%5D.woff2') format('woff2'),
+url('https://cdn.statically.io/gh/Calculating0/muthiara/main/muthiara_demo_version-webfont%5B1%5D.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+a[href="/community/user/806548"] {font-size:0px}
+a[href="/community/user/806548"]::before {
+    font-size: 17px !important;
+    content: "dr pepper (coke)";
+        color: #800020!important; 
+font-family: muthiara_demo_version;
+}
+
+a[href="/community/user/699364"]{font-size: 0px} 
+a[href="/community/user/699364"]::before {
+ font-size:48px!important; 
+  font-weight: bold !important;
+content: "biggest ppenguin";
+color: Blue
+}
+a[href="/community/user/958086"] {font-size:0px}
+a[href="/community/user/958086"]::before {
+    font-size: 16px !important;
+   font-weight: bold !important;
+    content: "maddieeiieeiieieee";
+        color: #bae!important; 
+font-family: Gaegu;
+}
+a[href="/community/user/958087"] {font-size:0px}
+a[href="/community/user/958087"]::before {
+    font-size: 7px !important;
+   font-weight: bold !important;
+    content: "jujube";
+font-family: Gaegu;
+animation: blue 3s linear infinite!important;; 
+}
+
+a[href="/community/user/893664"]{font-size: 0px} 
+a[href="/community/user/893664"]::before {
+ font-size: 15px!important; 
+  font-weight: normal;
+content: "elsa :^";
+font-family: Gaegu;
+color: #0052A2!important; 
+}
+
+@keyframes blue {
+   0%, 100% {color: skyblue;}
+   20% {color: #ADD8E6;}
+   40% {color: cyan;}
+   60% {color: #7aacde;}
+   80% {color: #34abeb;}
+}
+a[href="/community/user/963677"]{font-size: 0px} 
+a[href="/community/user/963677"]::before {
+ font-size: 16px!important; 
+  font-weight: bold;
+content: "thoughts";
+font-family: Gaegu;
+animation: blue 5s linear infinite!important;; 
+}
+a[href="/community/user/585000"]{font-size: 0px} 
+a[href="/community/user/585000"]::before {
+ font-size: 15px!important; 
+  font-weight: normal;
+content: "METH BOY";
+font-family: Gaegu;
+color: ; 
+}
+a[href="/community/user/598883"] {font-size:0px}
+a[href="/community/user/598883"]::before {
+    font-size: 15px !important;
+   font-weight: bold !important;
+    content: "ෆ emma ෆ";
+        color: #66545e!important; 
+font-family: Gaegu;
+}
+a[href="/community/user/799710"] {font-size:0px}
+a[href="/community/user/799710"]::before {
+    font-size: 15px !important;
+   font-weight: bold !important;
+    content: "Helena";
+        color: #5c677d!important; 
+font-family: Gaegu;
+}
+
+a[href="/community/user/981375"] {
+ font-size: 15px!important; 
+font-family: Gaegu;
+animation: rainbow 3s linear infinite!important;
+}
+@keyframes addyc {
+   0%, 100% {color: #D9EAD3;}
+   20% {color: #D9EAD3;}
+   40% {color: #F4CCCC;}
+   60% {color: #D9EAD3;}
+   80% {color: #D9EAD3;}
+}
+a[href="/community/user/970840"]{font-size: 0px} 
+a[href="/community/user/970840"]::before {
+ font-size: 17px!important; 
+  font-weight: bold;
+content: "addy <3";
+font-family: Gaegu;
+color: #013220!important;; 
+}
+a[href="/community/user/794377"]{font-size: 0px} 
+a[href="/community/user/794377"]::before {
+ font-size: 17px!important; 
+  font-weight: bold;
+content: "chlo";
+font-family: Gaegu;
+color: #C06C84!important;
+}
+
+a[href="/community/user/1054611"] {
+  color: #FFD966 !important;
+  font-weight: bold !important; }
+
+a[href="/community/user/977249"]{font-size: 0px} 
+a[href="/community/user/977249"]::before {
+ font-size:16px!important; 
+  font-weight: bold!important;
+content: "amine";
+color: #6AA84F
+
+}
+
+a[href="/community/user/821539"]{font-size: 0px} 
+a[href="/community/user/821539"]::before {
+ font-size:16px!important; 
+  font-weight: bold!important;
+content: "not dbnl";
+color: #c0ffee
+
+}
+.blog-report-post {
+display: none!important
+}
